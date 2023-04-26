@@ -34,5 +34,13 @@ if __name__ == "__main__":
         print("Usage: python main.py <model_input_path> <label_input_path> <model_output_path>")
         sys.exit(1)
     
-    main(sys.argv[1], sys.argv[2], sys.argv[3])
+    model_input_path = sys.argv[1]
+    label_input_path = sys.argv[2]
+    model_output_path = sys.argv[3]
+
+    print("model_input_path: ", model_input_path)
+    print("label_input_path: ", label_input_path)
+    print("model_output_path: ", model_output_path)
+
+    main(model_input_path, label_input_path, model_output_path)
 
