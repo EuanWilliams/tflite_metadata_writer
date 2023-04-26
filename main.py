@@ -14,8 +14,8 @@ def main(model_input_path, label_input_path, model_output_path) -> None:
     # tensor is quantized to uint8. See the introduction for normalization and
     # quantization parameters below for more details.
     # https://www.tensorflow.org/lite/models/convert/metadata#normalization_and_quantization_parameters)
-    _INPUT_NORM_MEAN = 127.5
-    _INPUT_NORM_STD = 127.5
+    _INPUT_NORM_MEAN = 0
+    _INPUT_NORM_STD = 255
 
     # Create the metadata writer.
     writer = ObjectDetectorWriter.create_for_inference(
